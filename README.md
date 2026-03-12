@@ -17,6 +17,61 @@ To build this application for production:
 npm run build
 ```
 
+## Live URL
+
+https://actionanand.github.io/anandraja/
+
+## What is TanStack?
+
+**TanStack is not a framework** like Angular and not an architecture like JAMstack (JavaScript, APIs, and Markup). It is a **collection of powerful JavaScript/TypeScript libraries** used to build modern web apps, especially with frameworks like React, Vue, Solid, Svelte, and Angular.
+
+Think of TanStack as a **toolbox of utilities for frontend apps**, not a full framework.
+
+### About TanStack
+
+TanStack is an **open-source collection of headless libraries** created by **Tanner Linsley**. These libraries solve common frontend problems including:
+
+- Data fetching
+- State management
+- Tables
+- Routing
+- Virtual lists
+- Forms
+
+**Key Features**:
+- **Framework-agnostic**: Works with multiple frameworks (React, Vue, Solid, Svelte, Angular)
+- **Headless libraries**: Provides logic without UI, you create the visual components
+- **Open-source**: Community-driven with active development
+
+### Origin of the Name
+
+The name TanStack comes from its creator:
+- **Tan** → From creator's name "Tanner Linsley"
+- **Stack** → Refers to a software stack (collection of tools used to build applications)
+
+So TanStack literally means: **"Tanner's stack of developer tools"**
+
+### Library Evolution
+
+Originally, the libraries had framework-specific names (React Query, React Table, etc.). Later, they were redesigned to support multiple frameworks. The branding changed to TanStack to reflect this broader, framework-agnostic ecosystem.
+
+### Headless Libraries Explained
+
+A **headless library** provides logic but no UI. It handles behavior, but you create the visual components yourself.
+
+**Real-World Analogy**:
+- **UI Library** → Like buying a ready-made car 🚗 (you can drive it but cannot redesign the engine easily)
+- **Headless Library** → Like buying only the engine ⚙️ (you build the car body however you want)
+
+### Most Popular TanStack Libraries
+
+- **TanStack Query** → Data fetching and synchronization
+- **TanStack Table** → Headless table component
+- **TanStack Router** → File-based routing (used in this project)
+- **TanStack Virtual** → Virtual lists for performance
+- **TanStack Form** → Form state management (newer)
+
+
 ## Cloning Guide
 
 1.  Clone only the remote primary HEAD (default: origin/main)
@@ -61,6 +116,35 @@ npx degit github:actionanand/ar-portfolio#1-skeleton angular-proj-name
 ```bash
 npx gitpick https://github.com/actionanand/anandraja -b 1-skeleton angular-proj-name
 ```
+
+### Difference Between git clone, npx degit, and npx gitpick
+
+**git clone**: Official Git command that clones the entire repository with full history (.git folder included). Best for full project access and version control.
+
+**npx degit**: A lightweight alternative that downloads only the latest commit without Git history. Faster and creates a smaller download, useful for scaffolding projects from templates. Uses GitHub API.
+
+**npx gitpick**: Another lightweight cloning tool similar to degit, supporting branch selection. Also downloads without full Git history, ideal for quick project setup.
+
+**Key Differences**:
+- `git clone` → Full history, requires Git, heavier
+- `npx degit` → No history, faster, simpler setup
+- `npx gitpick` → No history, supports branch selection, similar to degit
+
+## Linting & Formatting Tools
+
+### Biome
+**Biome** is an ultra-fast toolchain for web projects. It replaces multiple tools (Prettier, ESLint, etc.) with a single, more performant solution written in Rust. It provides linting, formatting, and code analysis all in one package.
+
+```bash
+npm run lint    # Run linting
+npm run format  # Format code
+npm run check   # Check for issues
+```
+
+### ESLint
+**ESLint** is a JavaScript linting tool that analyzes code to find and report patterns that don't adhere to a set style guide. It helps catch bugs, enforce best practices, and maintain code quality. It's highly configurable and widely used in JavaScript projects.
+
+**Biome vs ESLint**: Biome is faster and all-in-one, while ESLint is more traditional and has a larger ecosystem of plugins.
 
 
 ## Testing
